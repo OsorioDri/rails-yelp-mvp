@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>🍽 <%= @restaurant.name %></h1>
+
+  <p><%= @restaurant.address %></p>
+  <p><%= @restaurant.phone_number %></p>
+  <p><%= @restaurant.category %></p>
+
+  <hr>
+  <%= link_to restaurants_path do %>
+    <i class="fa fa-history"></i> Back to list
+  <% end %>
+</div>
